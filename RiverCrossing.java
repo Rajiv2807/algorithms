@@ -20,13 +20,39 @@ public class RiverCrossing
   {
     if (man==goat) 
     {
-      return false;
+      return true;
     }
-    else return true;
+    else
+    {
+      if (goat==cabbage || goat==lion) return false;
+      return true;
+    }
   }
 
   public boolean isGoal()
   {
     return man && goat && cabbage && lion;
   }
+
+  public boolean equals(Object y)
+  {
+    if (y == this) return true;
+
+    if (y == null) return false;
+
+    if (this.getClass() != y.getClass() ) return false;
+
+    RiverCrossing that = (RiverCrossing)y;
+    if that.man!=man return false;
+    if that.goat!=goat return false;
+    if that.cabbage!=cabbage return false;
+    if that.lion!=lion return false;
+    return true;
+  }
+
+  public Iterable<RiverCrossing> neighbors()
+  {
+    
+  }
+
 }
