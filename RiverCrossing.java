@@ -52,7 +52,13 @@ public class RiverCrossing
 
   public Iterable<RiverCrossing> neighbors()
   {
-    return null;
+    Stack<RiverCrossing> neighbors = new Stack<RiverCrossing>();
+
+    neighbors.push(new RiverCrossing(!man, goat, cabbage, lion));
+    neighbors.push(new RiverCrossing(!man, !goat, cabbage, lion));
+    neighbors.push(new RiverCrossing(!man, goat, !cabbage, lion));
+    neighbors.push(new RiverCrossing(!man, goat, cabbage, !lion));
+    return neighbors;
   }
 
 }
