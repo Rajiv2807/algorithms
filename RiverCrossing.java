@@ -43,16 +43,16 @@ public class RiverCrossing
     if (this.getClass() != y.getClass() ) return false;
 
     RiverCrossing that = (RiverCrossing)y;
-    if that.man!=man return false;
-    if that.goat!=goat return false;
-    if that.cabbage!=cabbage return false;
-    if that.lion!=lion return false;
+    if (that.man!=man) return false;
+    if (that.goat!=goat) return false;
+    if (that.cabbage!=cabbage) return false;
+    if (that.lion!=lion) return false;
     return true;
   }
 
   public Iterable<RiverCrossing> neighbors()
   {
-    
+    return null;
   }
 
 }
