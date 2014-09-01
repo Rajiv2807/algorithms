@@ -59,10 +59,10 @@ public class RiverCrossing
     RiverCrossing neighbour3 = new RiverCrossing(!man, goat, !cabbage, lion);
     RiverCrossing neighbour4 = new RiverCrossing(!man, goat, cabbage, !lion);
 
-    if neighbour1.isValid() neighbors.push(neighbour1);
-    if neighbour2.isValid() neighbors.push(neighbour2);
-    if neighbour3.isValid() neighbors.push(neighbour3);
-    if neighbour4.isValid() neighbors.push(neighbour4);
+    if (neighbour1.isValid()) neighbors.push(neighbour1);
+    if (neighbour2.isValid()) neighbors.push(neighbour2);
+    if (neighbour3.isValid()) neighbors.push(neighbour3);
+    if (neighbour4.isValid()) neighbors.push(neighbour4);
     return neighbors;
   }
 
