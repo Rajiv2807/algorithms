@@ -54,10 +54,10 @@ public class RiverCrossing
   {
     Stack<RiverCrossing> neighbors = new Stack<RiverCrossing>();
 
-    neighbors.push(new RiverCrossing(!man, goat, cabbage, lion));
-    neighbors.push(new RiverCrossing(!man, !goat, cabbage, lion));
-    neighbors.push(new RiverCrossing(!man, goat, !cabbage, lion));
-    neighbors.push(new RiverCrossing(!man, goat, cabbage, !lion));
+    RiverCrossing neighbour1 = new RiverCrossing(!man, goat, cabbage, lion);
+    RiverCrossing neighbour2 = new RiverCrossing(!man, !goat, cabbage, lion);
+    RiverCrossing neighbour3 = new RiverCrossing(!man, goat, !cabbage, lion);
+    RiverCrossing neighbour4 = new RiverCrossing(!man, goat, cabbage, !lion);
     return neighbors;
   }
 
