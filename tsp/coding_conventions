@@ -4,3 +4,12 @@ tried my best to include comments wherever possible
 A mix of multiline and single line comments used
 Java convention for naming classes and variables
 
+General opening of constuctors/functions/classes as follows:
+
+public class Testing
+{
+
+  // All code goes here
+
+}
+
